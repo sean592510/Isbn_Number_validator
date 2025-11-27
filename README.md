@@ -9,7 +9,7 @@ A clean, fast, and accurate ISBN-10 and ISBN-13 validator in Python.
 - CLI + Web interface
 
 ## Usage
-
+- Used for checking validity of the ISBN numbers 
 ### CLI
 ```bash
 python isbn_validator.py
