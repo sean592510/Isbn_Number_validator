@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBN Validator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ISBN Validator</h1>
+        <p>Enter ISBN and length like: <code>9780261103573,13</code> or <code>0-306-40615-2,10</code></p>
+
+        <form method="POST">
+            <input type="text" name="input" placeholder="e.g. 15-30051126,10" required autofocus>
+            <button type="submit">Validate</button>
+        </form>
+
+        {% if message %}
+        <div class="result {{ 'valid' if valid else 'error' }}">
+            {{ message }}
+        </div>
+        {% endif %}
+
+        <footer>
+            <small>Supports ISBN-10 & ISBN-13 • Hyphens & spaces allowed</small>
+        </footer>
+    </div>
+</body>
+</html>
