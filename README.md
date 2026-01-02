@@ -1,6 +1,6 @@
 # ISBN Validator
 
-A clean, fast, and accurate ISBN-10 and ISBN-13 validator in Python.
+A clean, fast, and accurate ISBN-10 and ISBN-13 validator in Python
 
 ## Features
 - Supports ISBN-10 and ISBN-13
